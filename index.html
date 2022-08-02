@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Generate Strong Password</title>
+</head>
+<body>
+    
+    <main>
+        <h2>Password Generator</h2>
+        <div class="passRes">
+            <span class="result"></span>
+            <button id="clipBtn"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+            
+        </div>
+        
+        <div class="passwordOptions">
+            <div class="passOption">
+                <label for="">Password Length</label>
+                <input type="number" min="8" max="20" value="10" id="passLength">
+            </div>
+            <div class="passOption">
+                <label for="">Include uppercase letters</label>
+                <input type="checkbox" id="upperCaseOpt" checked>
+            </div>
+            <div class="passOption">
+                <label for="">Include lowercase letters</label>
+                <input type="checkbox" id="lowercaseOpt" checked>
+            </div>
+            <div class="passOption">
+                <label for="">Include numbers</label>
+                <input type="checkbox" id="numberOpt" checked>
+            </div>
+            <div class="passOption">
+                <label for="">Include symbols</label>
+                <input type="checkbox" id="symbolsOpt" checked>
+            </div>
+        </div>
+        <button id="passBtn">Generate Password</button>
+    </main>
+
+
+    <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
